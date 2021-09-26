@@ -1,6 +1,6 @@
 package jun.algorithm.romannumerals;
 
+public class UnknownRomanNumberException extends RuntimeException {
 
-public class UnknownRomanNumberException extends RuntimeException{
 
 }
