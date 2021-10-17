@@ -1,4 +1,4 @@
-package jun.alrorithm.besttime;
+package jun.alrorithm.easy.besttime;
 
 public class StockPredictor {
 
@@ -6,7 +6,6 @@ public class StockPredictor {
 		int max = 0;
 		int min = prices[0];
 		for (int todayPrice: prices) {
-			7,6,8,3,2
 			max = Math.max(todayPrice - min, max);
 			min = Math.min(todayPrice, min);
 		}

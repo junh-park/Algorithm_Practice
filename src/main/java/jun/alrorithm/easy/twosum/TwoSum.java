@@ -1,4 +1,4 @@
-package jun.alrorithm.twosum;
+package jun.alrorithm.easy.twosum;
 
 import java.util.HashMap;
 import java.util.Map;

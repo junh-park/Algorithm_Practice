@@ -1,4 +1,4 @@
-package jun.alrorithm.twosum;
+package jun.alrorithm.easy.twosum;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.arrayContainingInAnyOrder;
@@ -9,6 +9,8 @@ import static org.hamcrest.Matchers.is;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import jun.alrorithm.easy.twosum.TwoSum;
 
 public class TwoSumTest {
 	private TwoSum sum;

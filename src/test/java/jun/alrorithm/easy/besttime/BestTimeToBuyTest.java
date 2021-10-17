@@ -1,9 +1,11 @@
-package jun.alrorithm.besttime;
+package jun.alrorithm.easy.besttime;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 import org.junit.Test;
+
+import jun.alrorithm.easy.besttime.StockPredictor;
 
 public class BestTimeToBuyTest {
 
