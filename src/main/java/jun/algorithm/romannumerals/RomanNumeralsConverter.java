@@ -3,23 +3,22 @@ package jun.algorithm.romannumerals;
 public class RomanNumeralsConverter {
 
 	public int convert(String romanNumber) {
-		if("".equals(romanNumber)) throw new NullPointerException();
+		if ("".equals(romanNumber))
+			throw new NullPointerException();
 		return calculate(romanNumber);
 	}
-	
+
 	private int calculate(String romanNumber) {
+		if(romanNumber.length() == 1) { return romanNumeralDictionary(romanNumber); }
+		
 		int result = 0;
-		if(romanNumber.length() == 1) { return romanNumeralDictionary(romanNumber); } 
-		else {
-			String[] num = romanNumber.split("");
-			for (int i = 0; i < num.length-1; i++) {
-				int curr = romanNumeralDictionary(num[i]);
-				
-				if(romanNumeralsLogic(num[i], num[i+1])) { result -= curr; }
-				else { result += curr; }
-			}
-			result += romanNumeralDictionary(num[num.length-1]);
+		String[] num = romanNumber.split("");
+		for (int i = 0; i < num.length-1; i++) {
+			if(romanNumeralsLogic(num[i], num[i+1])) { result -= romanNumeralDictionary(num[i]); }
+			else { result += romanNumeralDictionary(num[i]); }
 		}
+		result += romanNumeralDictionary(num[num.length-1]);
+	
 		return result;	
 	}
 
