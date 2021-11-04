@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.is;
 
 import org.junit.Test;
 
-import jun.alrorithm.easy.besttime.StockPredictor;
+import jun.algorithm.easy.besttime.StockPredictor;
 
 public class BestTimeToBuyTest {
 

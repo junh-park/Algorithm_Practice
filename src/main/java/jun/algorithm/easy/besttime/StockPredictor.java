@@ -1,4 +1,4 @@
-package jun.alrorithm.easy.besttime;
+package jun.algorithm.easy.besttime;
 
 public class StockPredictor {
 
