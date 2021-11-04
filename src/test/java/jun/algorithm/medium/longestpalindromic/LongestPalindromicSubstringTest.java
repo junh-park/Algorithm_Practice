@@ -1,18 +1,24 @@
-package jun.algorithm.medium.longestpalindromicsubstring;
+package jun.algorithm.medium.longestpalindromic;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.either;
 import static org.hamcrest.Matchers.is;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class LongestPalindromicSubstringTest {
+
+	private panSubstring sub;
+
+	@Before
+	public void setUp() {
+		sub = new panSubstring();
+	}
 	
 	@Test
 	public void when_a_is_entered_returns_a() {
-		LongestPalindromicSubstring pan = new LongestPalindromicSubstring();
 		String s = "a";
 		
-		assertThat(pan.findSubstring(s), either(is("bab")).or(is("aba"));
+		assertThat(sub.findSubstring(s), is("a"));
 	}
 }

@@ -9,6 +9,7 @@ public class SubstringFinder {
 		if (s.length() == 0) return 0;
 		Set acceptedChar = new HashSet();
 		int i = 0, j = 0, max = 0;
+		
 		while ( j < s.length()) {
 			if (!acceptedChar.contains(s.charAt(j))) {
 				acceptedChar.add(s.charAt(j++));
