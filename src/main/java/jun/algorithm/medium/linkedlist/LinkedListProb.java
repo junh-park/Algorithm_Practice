@@ -1,4 +1,4 @@
-package jun.algorithm.linkedlist;
+package jun.algorithm.medium.linkedlist;
 
 public class LinkedListProb {
 	public static void main(String[] args) {
